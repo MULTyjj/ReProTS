@@ -12,7 +12,7 @@
 
 <p align="center">
 
-<img src="./figures/model1.png" width="70">
+<img src="./figures/model1.png" width="90%">
 
 </p>
 
