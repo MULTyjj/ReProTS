@@ -1,76 +1,28 @@
 <div align="center">
   <!-- <h1><b> ReProTS </b></h1> -->
   <!-- <h2><b> ReProTS </b></h2> -->
-  <h2><b> (ICLR'24) ReProTS: Time Series Forecasting by Reprogramming Large Language Models </b></h2>
-</div>
+  <h2><b> ReProTS: Reprogrammed Prompting for Time Series Forecasting with Frozen Large Language Models </b></h2>
+
 
 <div align="center">
 
-![](https://img.shields.io/github/last-commit/KimMeen/ReProTS?color=green)
-![](https://img.shields.io/github/stars/KimMeen/ReProTS?color=yellow)
-![](https://img.shields.io/github/forks/KimMeen/ReProTS?color=lightblue)
-![](https://img.shields.io/badge/PRs-Welcome-green)
-
-</div>
-
-<div align="center">
-
-**[<a href="https://arxiv.org/abs/2310.01728">Paper Page</a>]**
-**[<a href="https://www.youtube.com/watch?v=6sFiNExS3nI">YouTube Talk 1</a>]**
-**[<a href="https://www.youtube.com/watch?v=L-hRexVa32k">YouTube Talk 2</a>]**
-**[<a href="https://medium.com/towards-data-science/ReProTS-reprogram-an-llm-for-time-series-forecasting-e2558087b8ac">Medium Blog</a>]**
-
-**[<a href="https://www.jiqizhixin.com/articles/2024-04-15?from=synced&keyword=ReProTS">机器之心中文解读</a>]**
-**[<a href="https://mp.weixin.qq.com/s/UL_Kl0PzgfYHOnq7d3vM8Q">量子位中文解读</a>]**
-**[<a href="https://mp.weixin.qq.com/s/FSxUdvPI713J2LiHnNaFCw">时序人中文解读</a>]**
-**[<a href="https://mp.weixin.qq.com/s/nUiQGnHOkWznoBPqM0KHXg">AI算法厨房中文解读</a>]**
-**[<a href="https://zhuanlan.zhihu.com/p/676256783">知乎中文解读</a>]**
 
 
 </div>
 
 <p align="center">
 
-<img src="./figures/logo.png" width="70">
+<img src="./figures/model.png" width="70">
 
 </p>
 
 ---
 >
-> 🙋 Please let us know if you find out a mistake or have any suggestions!
+>  Please let us know if you find out a mistake or have any suggestions!
 > 
-> 🌟 If you find this resource helpful, please consider to star this repository and cite our research:
+>  If you find this resource helpful, please consider to star this repository and cite our research:
 
 ```
-@inproceedings{jin2023time,
-  title={{ReProTS}: Time series forecasting by reprogramming large language models},
-  author={Jin, Ming and Wang, Shiyu and Ma, Lintao and Chu, Zhixuan and Zhang, James Y and Shi, Xiaoming and Chen, Pin-Yu and Liang, Yuxuan and Li, Yuan-Fang and Pan, Shirui and Wen, Qingsong},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  year={2024}
-}
-```
-
-## Updates/News:
-
-🚩 **News** (Aug. 2024): ReProTS has been adopted by XiMou Optimization Technology Co., Ltd. (XMO) for Solar, Wind, and Weather Forecasting.
-
-🚩 **News** (May 2024): ReProTS has been included in [NeuralForecast](https://github.com/Nixtla/neuralforecast). Special thanks to the contributor @[JQGoh](https://github.com/JQGoh) and @[marcopeix](https://github.com/marcopeix)!
-
-🚩 **News** (March 2024): ReProTS has been upgraded to serve as a general framework for repurposing a wide range of language models to time series forecasting. It now defaults to supporting Llama-7B and includes compatibility with two additional smaller PLMs (GPT-2 and BERT). Simply adjust `--llm_model` and `--llm_dim` to switch backbones.
-
-## Introduction
-ReProTS is a reprogramming framework to repurpose LLMs for general time series forecasting with the backbone language models kept intact.
-Notably, we show that time series analysis (e.g., forecasting) can be cast as yet another "language task" that can be effectively tackled by an off-the-shelf LLM.
-
-<p align="center">
-<img src="./figures/framework.png" height = "360" alt="" align=center />
-</p>
-
-- ReProTS comprises two key components: (1) reprogramming the input time series into text prototype representations that are more natural for the LLM, and (2) augmenting the input context with declarative prompts (e.g., domain expert knowledge and task instructions) to guide LLM reasoning.
-
-<p align="center">
-<img src="./figures/method-detailed-illustration.png" height = "190" alt="" align=center />
-</p>
 
 ## Requirements
 Use python 3.11 from MiniConda
